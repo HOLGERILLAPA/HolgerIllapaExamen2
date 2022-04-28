@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolgerIllapa.Android", "Hol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolgerIllapa.iOS", "HolgerIllapa.iOS\HolgerIllapa.iOS.csproj", "{268C8AF4-FB3F-4113-8DBD-2D3BE91DA664}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolgerIllapa", "HolgerIllapa\HolgerIllapa.csproj", "{B20E111D-AED1-41DB-AE16-6F945A78A459}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolgerIllapa", "HolgerIllapa\HolgerIllapa.csproj", "{B20E111D-AED1-41DB-AE16-6F945A78A459}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

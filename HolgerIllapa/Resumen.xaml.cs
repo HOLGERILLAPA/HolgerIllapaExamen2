@@ -12,13 +12,15 @@ namespace HolgerIllapa
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Resumen : ContentPage
     {
+        
+
         public Resumen(string nombre, string usuario, double total)
         {
             InitializeComponent();
-
-             //txtNombre.Text = nombre;
-           // txtTotal.Text = total.ToString();
-
+            lblUsuario.Text = usuario;
+            txtNombre.Text = nombre;
+            txtTotal.Text = total.ToString();
         }
+
     }
 }

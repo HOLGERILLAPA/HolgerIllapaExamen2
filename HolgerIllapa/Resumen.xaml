@@ -4,6 +4,8 @@
              x:Class="HolgerIllapa.Resumen">
     <ContentPage.Content>
         <StackLayout>
+
+            <Label x:Name="lblUsuario" Text="Usuario" HorizontalOptions="End"/>
             <Label Text=" Conectado:  holger2022" TextColor="DarkBlue" VerticalOptions="Fill" HorizontalOptions="End" />
 
             <Grid>
@@ -19,14 +21,11 @@
                     <ColumnDefinition  />
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Ingrese sus Nombres" Grid.Row="0" Grid.Column="0"/>
-                <Entry x:Name="TexNombre" Placeholder=" Ingres sus nombres" Grid.Row="0" Grid.Column="1" Keyboard="Text"/>
-                
-                <Label Text="Monto inicial" Grid.Row="1" Grid.Column="0"/>
-                <Entry x:Name="TxtMontoin" Placeholder=" Monto Inicial" Grid.Row="1" Grid.Column="1" Keyboard="Numeric"/>
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="1"/>
 
-                <Label Text="Total" Grid.Row="2" Grid.Column="0"/>
-                <Entry x:Name="TxtTotal" Placeholder=" Pago Mensual" IsReadOnly="True" Grid.Row="2" Grid.Column="1" Keyboard="Numeric"/>
+                <Label Text="Total" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtTotal" Grid.Row="1" Grid.Column="1"/>
 
             </Grid>
 

@@ -7,16 +7,14 @@
             <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" WidthRequest="180" HeightRequest="180"/>
             <Entry x:Name="txtUsuario" Placeholder="Usuario" TextColor="Blue"    PlaceholderColor="Gray"/>
             <Entry x:Name="txtpass" Placeholder="Clave" IsPassword="True" TextColor="DodgerBlue"    PlaceholderColor="Gray"/>
-            <Button VerticalOptions="Center"
-                    Text="INICIAR SESION"
-                    TextColor="Crimson"
-                    BackgroundColor="Aquamarine"
+            <Button x:Name="btnIngresar" Text= "INICIAR SESION" BackgroundColor="Aquamarine" 
+                    
+                   Clicked="btnIngresar_Clicked"
+                     TextColor="Crimson"
                     BorderColor="ForestGreen"
                     BorderWidth="1.5"
-                    CornerRadius="50"
-                    Clicked="Button_Clicked"/>
-
-            
+                     CornerRadius="50"/>
+                                 
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

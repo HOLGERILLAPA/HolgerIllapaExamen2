@@ -12,30 +12,25 @@ namespace HolgerIllapa
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
     {
-
-
         public Login()
         {
             InitializeComponent();
         }
-        private void Button_Clicked(object sender, EventArgs e)
+        
+         private async void btnIngresar_Clicked(object sender, EventArgs e)
         {
             if (txtUsuario.Text == "holger2022" && txtpass.Text == "uisrael2022")
             {
 
-                DisplayAlert("BIENVENIDOS","Registro de Estudiante", "OK");
-                Navigation.PushAsync(new Registro());
+
+                await Navigation.PushAsync(new Registro(txtUsuario.Text));
 
 
             }
             else
             {
-                DisplayAlert("Error", "Usuario o Clave Incorrecta", "ok");
+                await DisplayAlert("Error", "Usuario o Clave Incorrecta", "ok");
             }
-        }
-
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
 
         }
     }
