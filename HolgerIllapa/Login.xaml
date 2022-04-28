@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolgerIllapa.Login">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" WidthRequest="180" HeightRequest="180"/>
+            <Entry x:Name="txtUsuario" Placeholder="Usuario" TextColor="Blue"    PlaceholderColor="Gray"/>
+            <Entry x:Name="txtpass" Placeholder="Clave" IsPassword="True" TextColor="DodgerBlue"    PlaceholderColor="Gray"/>
+            <Button VerticalOptions="Center"
+                    Text="INICIAR SESION"
+                    TextColor="Crimson"
+                    BackgroundColor="Aquamarine"
+                    BorderColor="ForestGreen"
+                    BorderWidth="1.5"
+                    CornerRadius="50"
+                    Clicked="Button_Clicked"/>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
